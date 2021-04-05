@@ -50,10 +50,16 @@ class SliderPage extends StatelessWidget {
           dan pada teks diberikan style yang berfungsi untuk memodifikasi tampilan
           dari text
            */
-          Text(title, style: TextStyle( // Text di ambil dari Variabel Widget yang di terima dari File Main Dart Serta memodifikasi Tampilan Text
-            fontSize: 20, // Font diatur dalam ukuran 20 px
-            fontWeight: FontWeight.bold // Font diatur tebal
-          ),),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 60),
+            child: Text(
+              title, style: TextStyle( // Text di ambil dari Variabel Widget yang di terima dari File Main Dart Serta memodifikasi Tampilan Text
+                fontSize: 20, // Font diatur dalam ukuran 20 px
+                fontWeight: FontWeight.bold // Font diatur tebal
+              ),
+              textAlign: TextAlign.center,),
+          ),
+
           /*
           Child 4 (SizedBox)
           Digunakan untuk memberikan box, berfungsi untuk memberikan jarak
@@ -68,7 +74,7 @@ class SliderPage extends StatelessWidget {
           dari text
            */
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 80), // Memberikan Padding sebesar 80 px pada Garis Horizontal
+            padding: const EdgeInsets.symmetric(horizontal: 60), // Memberikan Padding sebesar 80 px pada Garis Horizontal
             child: Text(
               description, style: TextStyle( // Text di ambil dari Variabel Widget yang di terima dari File Main Dart Serta memodifikasi Tampilan Text
                 height: 1.5, // Mengatur Jarak Spasi sebesar 1.5

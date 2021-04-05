@@ -44,18 +44,18 @@ class _OnBoardingState extends State<OnBoarding> {
    */
   List <Widget> _pages = [
     SliderPage(
-      title: "Keep Save",
-      description: "Accept cryptocurrencies and digital assets, keep term here, or send to others",
+      title: "Belajar Online Langsung dengan Mentor Terbaik",
+      description: "Belajar Online menjadi sangat mudah dan menyenangkan karena kami telah menyediakan mentor terbaik untuk anda",
       image: "assets/1.svg",
     ),
     SliderPage(
-      title: "Buy",
-      description: "Buy Bitcoin and cryptocurrencies with VISA and MasterCard right in the App",
+      title: "Dapatkan Sertifikat Skill Yang Terpercaya",
+      description: "Kami Memberikan sertifikat atas skill anda yang telah diakui oleh banyak perusahaan ternama",
       image: "assets/2.svg",
     ),
     SliderPage(
-      title: "Sell",
-      description: "Sell your Bitcoin cryptocurrencies or Change with orthres digital assets or flat money",
+      title: "Ayo Kita Mulai Belajar Sekarang",
+      description: "tanpa berlama lama, mari kita langsung saja belajar bersama dengan kami",
       image: "assets/3.svg",
     ),
   ];
@@ -107,8 +107,8 @@ class _OnBoardingState extends State<OnBoarding> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       color: (index == _currentPage)
-                          ? Colors.blue
-                          : Colors.blue.withOpacity(0.5),
+                          ? Colors.green
+                          : Colors.green.withOpacity(0.5),
                     ),
                   );
                 })),
@@ -121,13 +121,13 @@ class _OnBoardingState extends State<OnBoarding> {
                   duration: Duration(milliseconds: 300),
                   height: 60,
                   alignment: Alignment.center,
-                  width: (_currentPage == (_pages.length - 1)) ? 150 : 60,
+                  width: (_currentPage == (_pages.length - 1)) ? 175 : 60,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.green,
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: (_currentPage == (_pages.length - 1))
-                  ? Text("Get Started",
+                  ? Text("Mulai Sekarang",
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   )
                   : Icon(
